@@ -1,0 +1,29 @@
+create database Tiendita_de_don_pepe;
+
+use Tiendita_de_don_pepe;
+
+CREATE TABLE Producto (
+
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Nombre VARCHAR(255) NOT NULL,
+  Proveedor VARCHAR(255) NOT NULL,
+  Fecha_de_caducidad DATE NOT NULL,
+  Stock INT NOT NULL,
+  Tipo VARCHAR(50)
+
+);
+
+
+
+CREATE TABLE empleados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50)NOT NULL,
+    apellido VARCHAR(50)NOT NULL,
+    cargo VARCHAR(50)NOT NULL,
+    correo VARCHAR(100)NOT NULL,
+    celular VARCHAR(20)NOT NULL,
+    estado_civil VARCHAR(20)NOT NULL,
+    direccion VARCHAR(100)NOT NULL,
+    fecha_nacimiento DATENOT NULL,
+    sueldo DECIMAL(10, 2)NOT NULL
+);
