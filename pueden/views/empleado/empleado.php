@@ -56,13 +56,20 @@ if ($id) {
     <title>Lista de Empleados</title>
     <style>
     body {
-        background: rgb(210,207,203);
-        background: linear-gradient(180deg, rgba(210,207,203,1) 0%, rgba(35,115,106,1) 50%, rgba(110,156,145,1) 100%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        font-family: 'Arial', sans-serif;
-        color: black; /* Para que el texto sea visible en el fondo negro */
-    }
+        background: rgb(64,166,154);
+background: radial-gradient(circle, rgba(64,166,154,1) 0%, rgba(110,156,145,0.07326680672268904) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Para mantener el fondo en su lugar */
+    background-position: center; /* Para centrar el fondo */
+    font-family: 'Arial', sans-serif;
+    color: black; /* Para que el texto sea visible en el fondo negro */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    height: 100vh; /* Altura del viewport */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+}
+
     .container-fluid > h1 {
         border: 8px solid #23736A;
         padding: 15px 30px ;
@@ -141,6 +148,8 @@ if ($id) {
     }
     .form-group {
         margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 18px;
     }
     .icon-btn {
         background: none;
@@ -165,6 +174,13 @@ if ($id) {
     .icon-btn:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         transform: scale(1.1); /* Escalar el botón al 110% del tamaño original al pasar el cursor sobre él */
+    }
+    .form-control{
+        font-size:15px;
+    }
+    #agregarDatosModalLabel{
+        font-size:40px;
+
     }
     
 </style>
