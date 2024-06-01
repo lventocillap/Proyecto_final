@@ -1,0 +1,3 @@
+create database Tienda;
+use Tienda;
+create table empleados( id int AUTO_INCREMENT PRIMARY key, nombre varchar (100), apellido varchar (100), cargo varchar (100), correo varchar (100), estado_civil varchar (50), direccion varchar (100), fecha_nacimiento date, sueldo decimal (7,2) );
